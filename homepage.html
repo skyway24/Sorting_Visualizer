@@ -1,0 +1,80 @@
+			<!DOCTYPE html>
+			<html>
+
+			<head>
+				<meta charset="UTF-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<h1 align="center"> Sorting Visualizer </h1>
+				<link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css">
+
+				<link rel="stylesheet" href="styles.css">
+
+				
+
+
+			</head>
+
+			
+			<header>
+				<nav class="navbar navbar-dark bg-dark">
+
+					<div class="row">
+						<div class="col gap-3 d-sm-flex" id="newArray">
+							
+							<button type="button" class="btn btn-sm btn-outline-success newArray" >New Array</button>
+							
+						</div>
+						
+							
+							
+						
+
+						<div class="col gap-5 d-sm-flex" id="input">
+
+							<span id="size">Size
+								<input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
+							</span>
+							<span id="speed">Speed
+								<input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+							</span>
+						</div>
+
+						
+
+						<div class="col gap-3 d-sm-flex justify-content-end">
+							<button type="button"  class="btn btn-sm btn-outline-primary selectionSort">Selection Sort</button>
+							<button type="button"  class="btn btn-sm btn-outline-primary bubbleSort">Bubble Sort</button>
+							<button type="button"  class="btn btn-sm btn-outline-primary insertionSort">Insertion Sort</button>
+							<button type="button"  class="btn btn-sm btn-outline-primary quickSort">Quick Sort</button>
+							<button type="button"  class="btn btn-sm btn-outline-primary mergeSort">Merge Sort</button>
+
+
+
+
+						</div>
+					</div>
+					
+				</nav>
+
+
+				
+			</header>
+
+			<body class="p-3 mb-2 bg-dark text-white">
+				<div id="bars" class="flex-container"></div>
+
+	
+				<script src="js_files/sorting.js"></script>
+				<script src="js_files/bubbleSort.js"></script>
+				<script src="js_files/selectionSort.js"></script>
+
+
+				<script src="js_files/insertionSort.js"></script>
+				<script src="js_files/mergeSort.js"></script>
+				<script src="js_files/quickSort.js"></script>
+
+				
+
+			</body>
+			</html>
