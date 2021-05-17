@@ -1,7 +1,5 @@
 // swap function util for sorting algorithms takes input of 2 DOM elements with .style.height feature
 
-var flag = false;
-
 function swap(el1, el2) {
 
 
@@ -10,12 +8,7 @@ function swap(el1, el2) {
     let temp = el1.style.height;
     el1.style.height = el2.style.height;
     el2.style.height = temp;
-
-
 }
-
-
-
 
 // Disables sorting buttons used in conjunction with enable, so that we can disable during sorting and enable buttons after it
 function disableSortingBtn(){
@@ -64,11 +57,6 @@ function waitforme(milisec) {
 
 }
 
-
-
-
-
-
 // Selecting size slider from DOM
 let arraySize = document.querySelector('#arr_sz');
 
@@ -90,9 +78,9 @@ delayElement.addEventListener('input', function(){
     console.log(delayElement.value, typeof(delayElement.value));
     delay = 320 - parseInt(delayElement.value);
 });
-let array = [];
-// Creating array to store randomly generated numbers
 
+// Creating array to store randomly generated numbers
+let array = [];
 
 // Call to display bars right when you visit the site
 createNewArray();
@@ -132,7 +120,7 @@ function deleteChild() {
 // Selecting newarray button from DOM and adding eventlistener
 const newArray = document.querySelector(".newArray");
 newArray.addEventListener("click", function(){
-   
+ 
     console.log("From newArray " + arraySize.value);
     console.log("From newArray " + delay);
     enableSortingBtn();
@@ -141,14 +129,6 @@ newArray.addEventListener("click", function(){
     createNewArray(arraySize.value);
 });
 
-
-const stopbtn = document.querySelector(".stopButton");
-
-
-document.querySelector(".stopButton").addEventListener("click", function(){
-   console.log("stop!");
-   flag = !flag;
-});
 
 
 
